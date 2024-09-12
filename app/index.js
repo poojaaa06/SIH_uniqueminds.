@@ -33,7 +33,7 @@ export default function App() {
         style={styles.lottie}
       />
       <Animated.Text style={[styles.appName, animatedStyle]}>
-        AppName
+        GeoAttend
       </Animated.Text>
       {showContent && (
         <>

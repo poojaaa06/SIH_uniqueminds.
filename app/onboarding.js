@@ -37,7 +37,7 @@ const OnboardingScreen = () => {
       </Link>
 
       {/* Skip Button with Icon */}
-      <Link href="/skip" style={styles.skipContainer}>
+      <Link href="/registration" style={styles.skipContainer}>
         <Text style={styles.skipText}>Skip</Text>
   
       </Link>
