@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity, Modal, FlatList, SafeAreaView } from 'react-native';
 import { BarChart } from 'react-native-chart-kit';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import { Link } from 'expo-router';
 
 const AttendanceDashboard = () => {
   const [selectedMonth, setSelectedMonth] = useState('July');
@@ -115,12 +116,12 @@ const AttendanceDashboard = () => {
 
       <View style={styles.navbar}>
         <Icon name="home" size={24} color="#FF6347" />
-        <Icon name="insert-chart" size={24} color="#000" />
+        <Link href="Applyleave"><Icon name="insert-chart" size={24} color="#000" /></Link>
         <TouchableOpacity style={styles.addButton}>
           <Icon name="add" size={24} color="#FFF" />
         </TouchableOpacity>
         <Icon name="message" size={24} color="#000" />
-        <Icon name="person" size={24} color="#000" />
+        <Link href="editprofile"><Icon name="person" size={24} color="#000" /></Link>
       </View>
 
       <Modal
